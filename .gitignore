@@ -7,3 +7,5 @@
 project/project
 project/target
 target
+scalafix/project/project/
+scalafix/project/metals.sbt

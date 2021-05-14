@@ -30,11 +30,14 @@ lazy val rules = project.settings(
 )
 
 lazy val input = project.settings(
-  publish / skip := true
+  publish / skip := true,
+  scalaVersion := "2.12.13",
+  libraryDependencies += "com.typesafe.play" %% "play" % "2.6.25"
 )
 
 lazy val output = project.settings(
-  publish / skip := true
+  publish / skip := true,
+  libraryDependencies += "com.typesafe.play" %% "play" % "2.7.9"
 )
 
 lazy val tests = project
